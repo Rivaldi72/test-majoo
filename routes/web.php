@@ -23,12 +23,6 @@ Route::middleware('auth')->group(function () {
         Route::prefix('master')->group(function () {
             Route::resource('product', ProductController::class);
         });
-        Route::prefix('sell')->group(function() {
-            Route::get('transaction', [SellTransactionController::class, 'index'])->name('sell.transaction');
-            Route::get('transaction/{id}', [SellTransactionController::class, 'show'])->name('sell.transaction.show');
-            Route::get('create-transaction', [SellTransactionController::class, 'create'])->name('sell.transaction.create');
-            Route::post('transaction', [SellTransactionController::class, 'store'])->name('sell.transaction.store');
-        });
 
         Route::get('data/products', [DataController::class, 'productAll'])->name('data.products');
         Route::get('data/product/{id}', [DataController::class, 'productById'])->name('data.product');
