@@ -11,3 +11,5 @@
 # Username: root
 
 # Password: root
+
+# ERD, ACTIVITY DIAGRAM, and USECASE is in the Documents folder
