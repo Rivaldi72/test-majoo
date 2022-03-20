@@ -2,7 +2,7 @@
 
 # Run php artisan key:generate
 
-# Run php artisan migrate and composer update /composer install
+# Run php artisan migrate
 
 # Run composer update /composer install
 
